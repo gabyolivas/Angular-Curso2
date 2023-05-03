@@ -1,0 +1,21 @@
+<h4>Agregar País</h4>
+<form class="row" (ngSubmit)="emitCountry()" >
+    <input type="text" 
+           [(ngModel)]="country.name" name="name" 
+           class="form-control mb-3" 
+           placeholder="Nombre País">
+    
+           <input type="number" 
+           [(ngModel)]="country.population" name="population" 
+           class="form-control mb-3" 
+           placeholder="Cantidad de Población">
+
+    <button type="submit" class="btn btn-success"  >
+        Nuevo País
+    </button>
+
+    <!-- <div>
+      <hr>
+      <pre>{{ country | json }}</pre>
+    </div>   -->
+</form>

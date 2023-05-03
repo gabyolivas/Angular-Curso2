@@ -1,0 +1,18 @@
+<h2> Países del Mundo </h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <mundo-list 
+           [countryList]="countries"
+           (deleteCountry)="onDeleteCountry($event)"
+        >
+        </mundo-list>
+        
+    </div>
+    <div class="col">
+        <mundo-add-country 
+           (onNewCountry)="onNewCountry($event)" >            
+        </mundo-add-country>
+    </div>
+</div>
